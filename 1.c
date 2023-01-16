@@ -35,7 +35,7 @@ DWORD WINAPI test(LPVOID input) {
 
     lock = CreateMutex(NULL, FALSE, NULL);
     WaitForSingleObject(lock, INFINITE);
-    globalResult *= wallisInRange(a, b);
+    globalResult *= wallis;
     ReleaseMutex(lock);
 
     exitVal[counter] = wallis;
